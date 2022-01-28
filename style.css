@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Norse';
+  src: url('./font/@font-face/fd1ad3a0f95210975d2f5607501020b5.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('./font/@font-face/fd1ad3a0f95210975d2f5607501020b5.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +12,8 @@
   font-family: "Norse", sans-serif;
 
 }
+
+
 
 #body {
   align-items: center;
