@@ -8,12 +8,12 @@ class Calculator {
 
 	allCLear() {
 		this.previousOperand = '';
-		this.currentOperand = '';
+		this.currentOperand = '0';
 		this.operator = undefined;
 	}
 
 	clear() {
-		this.currentOperand = '';
+		this.currentOperand = '0';
 	}
 
 	delete() {
