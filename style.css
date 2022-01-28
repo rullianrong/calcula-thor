@@ -1,12 +1,10 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Norse";
-}
+  outline: none;
+  font-family: "Norse", sans-serif;
 
-h1 {
-  color: #ffce45;
 }
 
 #body {
@@ -20,7 +18,7 @@ h1 {
   gap: 20px;
   height: 700px;
   justify-content: space-between;
-  margin: 200px auto;
+  margin: 100px auto;
   padding: 20px 0;
   width: 500px;
 }
@@ -30,9 +28,7 @@ h1 {
   border: 1px solid #d4ac2b;
   border-radius: 10px;
   width: 90%;
-}
-
-#display-div {
+  height: 80px;
   color: #a2792f;
   align-items: flex-end;
   display: flex;
@@ -40,6 +36,9 @@ h1 {
   justify-content: space-around;
   flex-grow: 1;
   padding: 0 20px;
+  margin-top: 20px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 #previous,
@@ -48,11 +47,12 @@ h1 {
 }
 
 #previous {
-  font-size: large;
+  font-size: 2rem;
+  color: rgba(162, 121, 47, .75);
 }
 
 #current {
-  font-size: xx-large;
+  font-size: 2.5rem;
 }
 
 #button-container {
@@ -66,14 +66,12 @@ h1 {
 
 .buttons {
   background-color: #f5eedc;
-  /* border: 1px solid #d4ac2b; */
-  border: 2px solid #d4ac2b;
+  border: 1px solid #d4ac2b;
   border-radius: 0.75em;
   color: #a2792f;
   cursor: pointer;
   font-size: larger;
   font-weight: bolder;
-  outline: none;
   transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
     background 150ms cubic-bezier(0, 0, 0.58, 1);
   transform-style: preserve-3d;
@@ -81,10 +79,12 @@ h1 {
 
 .symbols {
   background-color: #ffce45;
+  font-size: 1.5rem;
 }
 
 .power {
   background-color: #f9e0ae;
+  font-size: 1.5rem;
 }
 
 .buttons:hover,
@@ -115,4 +115,10 @@ h1 {
 
 .power:active {
   background: #f9e0ae;
+}
+
+.battery, .battery:hover {
+  color: #d4ac2b;
+  background-color: #D3504A;
+  border: none;
 }

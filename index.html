@@ -11,32 +11,31 @@
 </head>
 <body>
     <div id="body">
-        <h1>CALCULA-THOR</h1>
         <div id="display-div">
-            <p id="previous">Previous - 12345</p>
-            <p id="current">Current - 12345</p>
+            <p data-previous-display id="previous"></p>
+            <p data-current-display id="current"></p>
         </div>
         <div id="button-container">
-            <button class="buttons symbols">AC</button>
-            <button class="buttons symbols">CE</button>
-            <button class="buttons symbols">C</button>
-            <button class="buttons power">ON/OFF</button>
-            <button class="buttons">7</button>
-            <button class="buttons">8</button>
-            <button class="buttons">9</button>
-            <button class="buttons symbols">/</button>
-            <button class="buttons">4</button>
-            <button class="buttons">5</button>
-            <button class="buttons">6</button>
-            <button class="buttons symbols">x</button>
-            <button class="buttons">1</button>
-            <button class="buttons">2</button>
-            <button class="buttons">3</button>
-            <button class="buttons symbols">-</button>
-            <button class="buttons">0</button>
-            <button class="buttons symbols">.</button>
-            <button class="buttons symbols">=</button>
-            <button class="buttons symbols">+</button>
+            <button data-all-clear class="buttons symbols">AC</button>
+            <button data-clear class="buttons symbols">CE</button>
+            <button data-delete class="buttons symbols">DEL</button>
+            <button data-power class="buttons power" onclick="power()">ON/OFF</button>
+            <button data-numbers class="buttons">7</button>
+            <button data-numbers class="buttons">8</button>
+            <button data-numbers class="buttons">9</button>
+            <button data-operators class="buttons symbols">÷</button>
+            <button data-numbers class="buttons">4</button>
+            <button data-numbers class="buttons">5</button>
+            <button data-numbers class="buttons">6</button>
+            <button data-operators class="buttons symbols">*</button>
+            <button data-numbers class="buttons">1</button>
+            <button data-numbers class="buttons">2</button>
+            <button data-numbers class="buttons">3</button>
+            <button data-operators class="buttons symbols">-</button>
+            <button data-numbers class="buttons">0</button>
+            <button data-numbers class="buttons symbols">.</button>
+            <button data-equals class="buttons symbols">=</button>
+            <button data-operators class="buttons symbols">+</button>
         </div>
     </div>
 </body>
